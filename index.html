@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+    <style>
+        /* CSS to center everything */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Sacramento', cursive;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #image-container {
+            /* You can add specific styles for the image container here */
+            height: 200px;
+            background-color: #f0f0f0; /* Placeholder color */
+        }
+
+        #text-container {
+            margin-top: 20px;
+        }
+
+        #question {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #options button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #yes-button {
+            background-color: green;
+            color: white;
+        }
+
+        #no-button {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="image-container"></div> <!-- Container for displaying images -->
+        <div id="text-container">
+            <div id="question">Will you be my valentine?</div> <!-- Question -->
+            <div id="options">
+                <button id="yes-button" onclick="selectOption('yes')">Yes</button> <!-- Yes button -->
+                <button id="no-button" onclick="selectOption('no')">No</button> <!-- No button -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
